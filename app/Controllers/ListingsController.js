@@ -15,4 +15,8 @@ export default class ListingsController{
     constructor(){
         _draw()
     }
+
+    addToCart(listItemID){
+        listingsService.addToCart(listItemID)
+    }
 }
