@@ -4,8 +4,14 @@ class CartService {
 
 
    get Template() {
-
-      return ''
+      let result = ''
+      let cartItems = ProxyState.listings.filter(l => l.numInCart > 0)
+      console.log(cartItems);
+      cartItems.forEach(l => {
+         result += /*html*/`<div class="col">${l}</div>`
+         console.log(l);
+      })
+      return result
    }
 
    get Total() {
@@ -14,6 +20,7 @@ class CartService {
    }
 
    purchase() {
+      console.log("Cart service: purchase()");
       // TODO: Permanently reduce the item's stock by the amount purchased
       // TODO: Subtract the total from the wallet
    }
