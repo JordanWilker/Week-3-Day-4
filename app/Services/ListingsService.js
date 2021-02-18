@@ -12,6 +12,7 @@ class ListingsService{
         ProxyState.listings.find(i => i.id == listItemID).stock--
 
         console.log(ProxyState.listings.find(i => i.id == listItemID));
+        ProxyState.listings = ProxyState.listings
     }
 
 }

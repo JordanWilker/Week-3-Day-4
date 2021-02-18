@@ -13,6 +13,7 @@ function _draw(){
 
 export default class ListingsController{
     constructor(){
+        ProxyState.on("listings",_draw)
         _draw()
     }
 
