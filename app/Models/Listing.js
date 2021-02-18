@@ -3,13 +3,14 @@ import {generateId} from "../Utils/GenerateId.js"
 import {ProxyState} from "../AppState.js"
 
 export default class Listing{
-    constructor(title, imgUrl,description,price,stock, id = generateId()){
+    constructor({title, imgUrl,description,price,stock, id = generateId()}){
         this.title = title,
         this.imgUrl = imgUrl,
         this.description = description
         this.price= price,
         this.stock = stock
         this.id = id
+        this.numInCart = 0
         
     }
 
