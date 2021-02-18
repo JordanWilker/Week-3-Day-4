@@ -1,6 +1,6 @@
 
 import {generateId} from "../Utils/GenerateId.js"
-
+import {ProxyState} from "../AppState.js"
 
 export default class Listing{
     constructor(title, imgUrl,description,price,stock, id = generateId()){
