@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
+
     <title>daily-chall</title>
 </head>
 
@@ -23,11 +24,21 @@
     <main>
         <div id="app"></div>
         <div class="container-fluid">
-            <header class="row">
-
+            <header class="row bg-dark text-light text-center">
+                <div class="col p-1 d-flex justify-content-end">
+                    <div id="wallet">
+                        <b>$###</b>
+                    </div>
+                    <button class="btn btn-success">
+                        Print more $
+                    </button>
+                </div>
+                <div class="col p-1 d-flex justify-content-end">
+                    <button class="btn btn-primary">Cart</button>
+                </div>
             </header>
-            <main class="row" id="listings">
-
+            <main class="row bg-light" id="listings">
+                Main
             </main>
         </div>
     </main>
